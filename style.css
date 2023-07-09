@@ -1,0 +1,169 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background: #dad7de;
+}
+
+.wrapper{
+  max-width: fit-content;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  box-shadow:  0px 50px 50px -10px rgba(0, 0, 0, 0.3);
+}
+.header-nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 32px 0;
+  color: #717171;
+}
+
+header {
+  max-width:  1000px;
+  background: #0a0a0a ;
+  color: #dad7de;
+  margin: 0 auto 0 auto;
+}
+
+.image-box,
+#name,
+#contacts{
+  text-align: center;
+  margin: 80px 0;
+  /* background: rgb(110, 86, 110, 0.3); */
+}
+
+.home,
+.phone,
+.mail,
+.github,
+.telegram {
+  max-width: 20px;
+}
+.name-line,
+.one-line,
+.contacts-line,
+.education-line,
+.about-line,
+.skills-line,
+.english-line
+{
+  margin: 0 auto 10px;
+  width: 75%;
+  background: rgb(110, 86, 110, 0.5);
+  height: 3px;
+  border-radius: 3px;
+}
+
+.contacts-list,
+#education >p,
+#about >p,
+#skills >ul,
+#english >p {
+  text-align: start;
+  line-height: 40px;
+  margin: 20px 80px;
+}
+
+.contacts-list >li{
+  display: flex;
+  align-items: stretch;
+}
+.contacts-list >li >img{
+  margin-right: 10px;
+}
+
+#about,
+#education,
+#skills,
+#english {
+  margin-top: 80px;
+}
+
+.container {
+margin: 0 auto 0 auto;
+width: 100%;
+max-width: 1000px;
+/* min-height: 1000px; */
+/* background:  #dad7de; */
+display: grid;
+grid-template-columns: 2fr 3fr;
+}
+
+
+h1
+ {
+font-size: 26px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #717171;
+  transition: color 0.5s;
+}
+.contacts-list >li >a {
+  color: rgba(114, 30, 114, 0.8);
+  text-decoration: none;
+}
+
+
+.image-box{
+  text-align: center;
+  /* background: rgb(110, 86, 110, 0.3); */
+}
+.image-autor {
+  max-width: 85%;
+
+  /* margin-right: 10px; */
+  border-radius: 200px 200px 200px 200px;
+  border-style: solid;
+  border-width: 15px;
+  color: rgb(110, 86, 110, 0.5);
+  /* border: #a82b2b; */
+ }
+
+main {
+  /* background:rgb(110, 86, 110, 0.5); */
+  text-align: center;
+  background:  #dad7de;
+  /* min-height: 100vh; */
+}
+
+aside{
+  background: rgb(110, 86, 110, 0.3);
+  }
+
+
+.logo-rs{
+ width: 60px;
+  filter: drop-shadow(2px 2px 0px #717171);
+}
+footer {
+  background: #0a0a0a;
+  color:#717171;
+  font-size: 14px;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  padding: 32px 0;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+
