@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniyar Hapurzhonau - CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,26 +13,35 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="header">
       <ul class="header-nav">
         <li><a href="#contacts">Contacts</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#english">English</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
+      <div class="burger">
+        <div class="burger__wrapper">
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+        </div>
+      </div>
     </header>
     <div class="container">
-      <aside>
+
+      <aside class="aside">
         <div class="image-box">
           <img class="image-autor" src="images/purple-small.jpg" alt="autor">
         </div>
         <h1>DANIYAR HAPURZHONAU</h1>
-        <div class="under-line"></div>
+        <div class="aside_under-line"></div>
         <span>FRONT-END DEVELOPER</span>
         <nav id="contacts">
           <h2>Contacts</h2>
-          <div class="under-line"></div>
+          <div class="aside_under-line"></div>
           <ul class="contacts-list">
             <li>
               <img class="home" title="location" src="icons/home.svg" alt="home">
@@ -52,25 +62,8 @@
           </ul>
         </nav>
       </aside>
-      <main>
-        <section id="about">
-          <h2>About Me</h2>
-          <div class="under-line"></div>
-          <p>
-            I have good interpersonal skills, am an excellent team worker and
-            very willing to learn and develop new skills. I am reliable and
-            dependable and often seek new responsibilities within a wide range
-            of employment areas.
-          </p>
-        </section>
-        <section id="education">
-          <h2>Education</h2>
-          <div class="under-line"></div>
-          <p>
-            <strong>University:</strong> Belarusian National Technical
-            University, Mechanical Engineering major
-          </p>
-        </section>
+
+      <main class="main">
         <section id="skills">
           <h2>Skills</h2>
           <div class="under-line"></div>
@@ -82,24 +75,68 @@
             <li>React (Basic)</li>
           </ul>
         </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="under-line"></div>
+          <div class="projects__items">
+            <div class="projects__items_item">
+              <a href="https://hapurzhonau.github.io/random-game/" target="_blank">
+                <img class="gamepad" src="icons/gamepad-svgrepo-com.svg" alt="gamepad">
+                <!-- <img class="random-game" src="images/random-game.jpg" alt="random-game"> -->
+                HALLOWEEN GAME
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <div class="under-line"></div>
+          <p>
+            <strong>University:</strong>&nbsp;Belarusian National Technical
+            University,<br> Mechanical Engineering major
+          </p>
+          <div class="divide_under-line"></div>
+          <div class="certificate">
+            <p> <strong>Cours:</strong>&nbsp;The Rolling Scopes
+              School <br>2023Q2
+            </p>
+            <a href="https://app.rs.school/certificate/fuptssow" target="_blank">
+              <img class="certificate__img" src="images/certificate.png" alt="certificate">
+            </a>
+          </div>
+        </section>
         <section id="english">
           <h2>English</h2>
           <div class="under-line"></div>
           <p>B1</p>
         </section>
+        <section id="about">
+          <h2>About Me</h2>
+          <div class="under-line"></div>
+          <p>
+            I have good interpersonal skills, am an excellent team worker and
+            very willing to learn and develop new skills. I am reliable and
+            dependable and often seek new responsibilities within a wide range
+            of employment areas.
+          </p>
+        </section>
       </main>
+
     </div>
+
     <footer>
       <div class="footer-wrapper">
         <a href="https://rs.school/js/">
-          <img class="logo-rs" src="icons/rs.svg" title="rsschool" alt="logo">
+          <img class="logo-rs" src="icons/rs_school_gray.svg" title="rsschool" alt="logo">
         </a>
       </div>
       <span>2023</span>
       <a href="https://github.com/hapurzhonau" title="github"><span>DANIYAR HAPURZHONAU</span></a>
     </footer>
+
   </div>
+  <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 
 </html>
