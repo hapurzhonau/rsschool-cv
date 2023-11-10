@@ -9,24 +9,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="icons/purple-small-100x100.png">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
-      <ul class="header-nav">
+      <ul class="header-nav active">
         <li><a href="#contacts">Contacts</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#english">English</a></li>
         <li><a href="#about">About</a></li>
       </ul>
       <div class="burger">
         <div class="burger__wrapper">
-          <span class="burger_line"></span>
-          <span class="burger_line"></span>
-          <span class="burger_line"></span>
+          <span class="burger_line burger_line-first"></span>
+          <span class="burger_line burger_line-second"></span>
+          <span class="burger_line burger_line-third"></span>
         </div>
       </div>
     </header>
@@ -81,9 +82,16 @@
           <div class="projects__items">
             <div class="projects__items_item">
               <a href="https://hapurzhonau.github.io/random-game/" target="_blank">
-                <img class="gamepad" src="icons/gamepad-svgrepo-com.svg" alt="gamepad">
-                <!-- <img class="random-game" src="images/random-game.jpg" alt="random-game"> -->
+                <img class="project_icon" src="icons/gamepad-svgrepo-com.svg" alt="gamepad">
+                <!-- <img class="project_img" src="images/random-game.jpg" alt="random-game"> -->
                 HALLOWEEN GAME
+              </a>
+            </div>
+            <div class="projects__items_item">
+              <a href="https://hapurzhonau.github.io/library/" target="_blank">
+                <img class="project_icon" src="icons/book.svg" alt="library">
+                <!-- <img class="project_img" src="images/random-game.jpg" alt="library"> -->
+                BROOKLYN PUBLIC LIBRARY
               </a>
             </div>
           </div>
