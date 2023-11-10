@@ -6,6 +6,7 @@ burgerWrapper.addEventListener('click', function (event) {
     // console.log(event.target);
     headerNavigation.classList.toggle('active');
     headerNavigation.style.visibility = headerNavigation.classList.contains('active') ? 'hidden' : 'visible';
+    burgerWrapper.classList.toggle('show');
 })
 if (window.innerWidth < 768) {
     headerNavigation.style.visibility = 'hidden';
