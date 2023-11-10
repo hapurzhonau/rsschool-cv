@@ -157,13 +157,13 @@ main {
   display: flex;
   align-items: center;
 } */
-.gamepad {
+.project_icon {
   max-width: 30px;
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.random-game {
+.project_img {
   position: absolute;
   left: 25%;
   top: 0;
@@ -177,7 +177,7 @@ main {
   border-radius: 5px;
 }
 
-.gamepad:hover + .random-game {
+.project_icon:hover + .project_img {
   position: absolute;
   display: block;
   opacity: 1;
