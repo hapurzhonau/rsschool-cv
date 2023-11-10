@@ -2,14 +2,18 @@ const burgerWrapper = document.querySelector(".burger__wrapper");
 const headerNavigation = document.querySelector(".header-nav");
 const body = document.querySelector("body");
 
-// if (!burgerWrapper) {
-//     headerNavigation.style.visibility = 'visible'
-// }
-// burgerWrapper.addEventListener('click', function (event) {
-//     // event.preventDefault();
-//     console.log(event.currentTarget)
-//     headerNavigation.classList.toggle('active');
-//     if (headerNavigation.classList.contains('active')) {
-//         headerNavigation.style.visibility = 'hidden';
-//     } else { headerNavigation.style.visibility = 'visible' };
-// })
+burgerWrapper.addEventListener('click', function (event) {
+    // console.log(event.target);
+    headerNavigation.classList.toggle('active');
+    headerNavigation.style.visibility = headerNavigation.classList.contains('active') ? 'hidden' : 'visible';
+})
+if (window.innerWidth < 768) {
+    headerNavigation.style.visibility = 'hidden';
+}
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 768) {
+        headerNavigation.style.visibility = 'visible';
+    } else {
+        headerNavigation.style.visibility = 'hidden';
+    }
+})
